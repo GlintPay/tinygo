@@ -24,6 +24,10 @@ type Task struct {
 	id uint64
 }
 
-func NewTask(_ context.Context, _ string) (ctx context.Context, task *Task) {
-	return nil, nil
+func NewTask(_ context.Context, _ string) (context.Context, *Task) {
+	return nil, &Task{}
+}
+
+func (t *Task) End() {
+	// NOOP
 }
