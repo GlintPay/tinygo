@@ -2,6 +2,7 @@
 package trace
 
 import (
+	"context"
 	"errors"
 	"io"
 )
